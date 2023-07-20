@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpeechToText">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_below="@+id/image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="101dp"
+        android:hint="@string/tap_to_button"
+        android:padding="2dp"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_centerInParent="true"
+        android:src="@drawable/baseline_mic_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-4dp"
+        android:text=" Bir zamanlar zengin bir ülkeyi yöneten bir kral vardı. Bir gün ülkesinin her köşesini ziyaret etmek istedi. Yollara düştü, dağ tepe demeden her köye, her kasabaya gitti. Saraya döndüğünde, kayalıklardan geçtiği için ayakları epey ağrıyordu. Sürekli yollardaki taşların ve kaya parçalarının ayağını incittiğinden şikayet ediyordu.  Bu nedenle kral, adamlarına ülkesindeki tüm yollara deri döşenmesini emretti. Ülkesindeki tüm yollar deriyle kaplandığında kral rahatlıkla gezip dolaşabilecekti. Ne var ki, tüm yolları deri ile kaplamak oldukça güç idi, çok fazla inek derisi gerekiyordu. Sırf kral daha rahat yürüyebilmesi için çok para harcanacaktı. Kraliçe bu duruma bir öneri getirdi. Kral’a;  -Neden bu iş için bu kadar çok para harcayacaksınız ki? Tüm yolları deriyle kaplamak yerine sadece bir parça deri kesip kendi ayaklarınızı örterek bu sorunu çözebilirsiniz.dedi.  Kraliçe’nin önerisi Kral’ın hoşuna gitti. Kraliçe’ye hak verip kendisi için deriden bir ayakkabı yaptırıp ülkesini karış karış gezmeye devam etti. "
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/yukle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="-317dp"
+        android:text="YÜKLE" />
+
+</RelativeLayout>
